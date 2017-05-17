@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: mysql
+  name: mysql
+spec:
+  type: NodePort
+  ports:
+    - name: mysql-port
+      nodePort: 30330
+      port: 3306
+      protocol: TCP
+      targetPort: 3306
+  selector:
+    io.kompose.service: mysql
+status:
+  loadBalancer: {}
+
+  
+  
+#  NodePort range: 30000-32767

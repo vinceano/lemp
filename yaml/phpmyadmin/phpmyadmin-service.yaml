@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: phpmyadmin
+  name: phpmyadmin
+spec:
+  type: NodePort
+  ports:
+    - name: phpmyadmin-port
+      nodePort: 30808
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    io.kompose.service: phpmyadmin
+status:
+  loadBalancer: {}
+#  NodePort range: 30000-32767

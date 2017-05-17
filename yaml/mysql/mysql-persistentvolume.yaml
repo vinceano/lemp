@@ -1,0 +1,13 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: mysql-pv0001
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 1000Mi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /tmp/hostpath-provisioner/db-data

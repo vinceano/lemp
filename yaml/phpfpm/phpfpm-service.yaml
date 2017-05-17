@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: phpfpm
+  name: phpfpm
+spec:
+  type: NodePort
+  ports:
+    - name: phpfpm-port
+      nodePort: 30900
+      port: 9000
+      protocol: TCP
+      targetPort: 9000
+  selector:
+    io.kompose.service: phpfpm
+status:
+  loadBalancer: {}
+
+  #  NodePort range: 30000-32767

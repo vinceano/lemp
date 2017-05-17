@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: phpfpm
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: phpfpm
+    spec:
+      containers:
+      - image: bitnami/php-fpm
+        name: phpfpm
+        ports:
+        - containerPort: 9000
+        resources: {}
+        volumeMounts:
+        - mountPath: /myapps
+          name: phpfpm-claim0
+      restartPolicy: Always
+      volumes:
+      - name: phpfpm-claim0
+        persistentVolumeClaim:
+          claimName: phpfpm-claim0
+status: {}

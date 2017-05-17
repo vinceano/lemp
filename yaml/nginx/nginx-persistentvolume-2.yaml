@@ -1,0 +1,13 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: nginx-pv0003
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 30Mi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/hosthome/secure/lemp/nginx/app.conf"
