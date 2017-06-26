@@ -1,19 +1,16 @@
 Search parameter name: | Description 
  --- | --- 
 GET Resource | returns just the resource itself not a bundle
-https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795
 <br>
 
 | Example |
 | --- |
-| `https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795` |
+| `https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795?_format=json` |
 
 
 Search parameter name: | Description 
  --- | --- 
 GET Resource _history all | _history without any parameters returns all records:
-https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795/_history
-
 The history interaction retrieves the history of either a particular resource, all resources of a given type, or all resources supported by the system. These three variations of the history interaction are performed by HTTP GET command as shown:
   GET [base]/[type]/[id]/_history{?[parameters]&_format=[mime-type]}
   GET [base]/[type]/_history{?[parameters]&_format=[mime-type]}
@@ -28,8 +25,6 @@ The history interaction retrieves the history of either a particular resource, a
 Search parameter name: | Description 
  --- | --- 
 GET Resource _history _count | returns n amount of  historic versions of the resource starting from latest :
-https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795/_history?_count=2
-
 _count : integer	single	Number of return records requested. The server is not bound to return the number requested, but cannot return more
 <br>
 
@@ -41,8 +36,6 @@ _count : integer	single	Number of return records requested. The server is not bo
 Search parameter name: | Description 
  --- | --- 
 GET Resource _history _since | returns all the historic versions records _since=zulu time:
-https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795/_history?_since=2017-05-23T13:38:23.085Z
-
 _since : instant	single	Only include resource versions that were created at or after the given instant in time
 <br>
 
@@ -54,8 +47,6 @@ _since : instant	single	Only include resource versions that were created at or a
 Search parameter name: | Description 
  --- | --- 
 GET Resource _history _at | returns resource versions current _at=dateTime
-http://172.28.24.18:8080/baseDstu3/PlanDefinition/ZynxOS-795/_history?_at=2017-06-23
-
 _at : dateTime	single	Only include resource versions that were current at some point during the time period specified in the date time value (may be more than one)
 <br>
 
@@ -67,7 +58,6 @@ _at : dateTime	single	Only include resource versions that were current at some p
 Search parameter name: | Description 
  --- | --- 
 GET Resource _history 1 | returns one specific resource version:
-https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795/_history/2
 <br>
 
 | Example |
@@ -78,7 +68,6 @@ https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795/_histo
 Search parameter name: | Description 
  --- | --- 
 GET Resource  _id ZynxOS-795 | the search with parameter _id returns a bundle with the requested resource:
-https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition?_id=ZynxOS-795
 <br>
 
 | Example |
@@ -89,7 +78,6 @@ https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition?_id=ZynxOS-795
 Search parameter name: | Description 
  --- | --- 
 GET Resource  _lastUpdated | The search parameter _lastUpdated can be used to select resources based on the last time they were changed:
-
  GET [base]/PlanDefinition?_lastUpdated=gt2017-10-01
 <br>
 
@@ -106,6 +94,5 @@ GET Resource by _content | _content parameter searches the entire content of the
 | Example |
 | --- |
 | `https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition?_content=Peak+Expiratory+Flow+Monitoring` |
-
 
 
