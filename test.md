@@ -6,7 +6,7 @@ GET Resource | returns just the resource itself not a bundle
 | Example |
 | --- |
 | `https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795?_format=json` |
-
+<br>
 
 Search parameter name: | Description 
  --- | --- 
@@ -20,7 +20,7 @@ The history interaction retrieves the history of either a particular resource, a
 | Example |
 | --- |
 | `https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795/_history?_format=json` |
-
+<br>
 
 Search parameter name: | Description 
  --- | --- 
@@ -31,7 +31,7 @@ _count : integer	single	Number of return records requested. The server is not bo
 | Example |
 | --- |
 | `https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795/_history?_count=3` |
-
+<br>
 
 Search parameter name: | Description 
  --- | --- 
@@ -42,7 +42,7 @@ _since : instant	single	Only include resource versions that were created at or a
 | Example |
 | --- |
 | `https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795/_history?_since=2017-05-23T13:38:23.085Z` |
-
+<br>
 
 Search parameter name: | Description 
  --- | --- 
@@ -53,7 +53,7 @@ _at : dateTime	single	Only include resource versions that were current at some p
 | Example |
 | --- |
 | `https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795/_history?_at=2017-06-21` |
-
+<br>
 
 Search parameter name: | Description 
  --- | --- 
@@ -63,7 +63,7 @@ GET Resource _history 1 | returns one specific resource version:
 | Example |
 | --- |
 | `https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition/ZynxOS-795/_history/2?_format=json` |
-
+<br>
 
 Search parameter name: | Description 
  --- | --- 
@@ -73,7 +73,7 @@ GET Resource  _id ZynxOS-795 | the search with parameter _id returns a bundle wi
 | Example |
 | --- |
 | `https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition?_id=ZynxOS-795` |
-
+<br>
 
 Search parameter name: | Description 
  --- | --- 
@@ -84,7 +84,7 @@ GET Resource  _lastUpdated | The search parameter _lastUpdated can be used to se
 | Example |
 | --- |
 | `https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition?_lastUpdated=gt2017-06-20&_lastUpdated=lt2017-06-22` |
-
+<br>
 
 Search parameter name: | Description 
  --- | --- 
@@ -94,5 +94,5 @@ GET Resource by _content | _content parameter searches the entire content of the
 | Example |
 | --- |
 | `https://api.cb.zynx.com/dev-v0/fhir-a/baseDstu3/PlanDefinition?_content=Peak+Expiratory+Flow+Monitoring` |
-
+<br>
 
