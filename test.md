@@ -2,7 +2,7 @@
 
 Search parameter name: | Description 
  --- | --- 
-GET Resource | returns just the resource itself not a bundle
+GET **Resource** | returns just the resource itself not a bundle
 <br>
 
 | Example |
@@ -12,7 +12,7 @@ GET Resource | returns just the resource itself not a bundle
 
 Search parameter name: | Description 
  --- | --- 
-GET Resource _history all | _history without any parameters returns all records:
+GET Resource **_history all** | _history without any parameters returns all records:
 The history interaction retrieves the history of either a particular resource, all resources of a given type, or all resources supported by the system. These three variations of the history interaction are performed by HTTP GET command as shown:
   GET [base]/[type]/[id]/_history{?[parameters]&_format=[mime-type]}
   GET [base]/[type]/_history{?[parameters]&_format=[mime-type]}
@@ -26,7 +26,7 @@ The history interaction retrieves the history of either a particular resource, a
 
 Search parameter name: | Description 
  --- | --- 
-GET Resource _history _count | returns n amount of  historic versions of the resource starting from latest :
+GET Resource **_history _count** | returns n amount of  historic versions of the resource starting from latest :
 _count : integer	single	Number of return records requested. The server is not bound to return the number requested, but cannot return more
 <br>
 
@@ -37,7 +37,7 @@ _count : integer	single	Number of return records requested. The server is not bo
 
 Search parameter name: | Description 
  --- | --- 
-GET Resource _history _since | returns all the historic versions records _since=zulu time:
+GET Resource **_history _since** | returns all the historic versions records _since=zulu time:
 _since : instant	single	Only include resource versions that were created at or after the given instant in time
 <br>
 
@@ -48,7 +48,7 @@ _since : instant	single	Only include resource versions that were created at or a
 
 Search parameter name: | Description 
  --- | --- 
-GET Resource _history _at | returns resource versions current _at=dateTime
+GET Resource **_history _at** | returns resource versions current _at=dateTime
 _at : dateTime	single	Only include resource versions that were current at some point during the time period specified in the date time value (may be more than one)
 <br>
 
@@ -59,7 +59,7 @@ _at : dateTime	single	Only include resource versions that were current at some p
 
 Search parameter name: | Description 
  --- | --- 
-GET Resource _history 1 | returns one specific resource version:
+GET Resource **_history 1** | returns one specific resource version:
 <br>
 
 | Example |
@@ -69,7 +69,7 @@ GET Resource _history 1 | returns one specific resource version:
 
 Search parameter name: | Description 
  --- | --- 
-GET Resource  _id ZynxOS-795 | the search with parameter _id returns a bundle with the requested resource:
+GET Resource  **_id** ZynxOS-795 | the search with parameter _id returns a bundle with the requested resource:
 <br>
 
 | Example |
@@ -79,7 +79,7 @@ GET Resource  _id ZynxOS-795 | the search with parameter _id returns a bundle wi
 
 Search parameter name: | Description 
  --- | --- 
-GET Resource  _lastUpdated | The search parameter _lastUpdated can be used to select resources based on the last time they were changed:
+GET Resource  **_lastUpdated** | The search parameter _lastUpdated can be used to select resources based on the last time they were changed:
  GET [base]/PlanDefinition?_lastUpdated=gt2017-10-01
 <br>
 
@@ -90,7 +90,7 @@ GET Resource  _lastUpdated | The search parameter _lastUpdated can be used to se
 
 Search parameter name: | Description 
  --- | --- 
-GET Resource by _content | _content parameter searches the entire content of the resource:
+GET Resource by **_content** | _content parameter searches the entire content of the resource:
 <br>
 
 | Example |
