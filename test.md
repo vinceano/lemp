@@ -1,3 +1,5 @@
+## FHIR Search Parameter examples:
+
 Search parameter name: | Description 
  --- | --- 
 GET Resource | returns just the resource itself not a bundle
